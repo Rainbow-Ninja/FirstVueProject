@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1, h2, h3, h4, h5, h6, div, p, span{font-family: helvetica; padding: 0; margin: 0;}
+        .main_frame{width: 300px; height: 450px; border: 1px blue solid;}
+        .photo_frame{width: 300px; height: 200px; background: red;}
+        .photo_size{width: 300px; height: 200px;}
+        .content_frame{width: 290px; height: 240px; position: relative; padding: 5px;}
+        .title{line-height: 26px; font-size: 18px;}
+        .summary{font-size: 14px; line-height: 20px;}
+        .category{position: absolute; bottom: 5px; font-weight: bold; color: teal;}
+        .gap{height: 15px;}
+    </style>
+    <script type='text/javascript' src='vue.js'></script>
+    <title>Vue Project</title>
+</head>
+<body>
+    <div id='app'>
+        <div class='main_frame'>
+            <div class="photo_frame">
+                <img src='image.jpg' alt='image' class='photo_size' />
+            </div>
+            <div class="content_frame">
+                <div class="gap"></div>
+                <div class="title">
+                    <h2>Title Put Here</h2>
+                </div>
+                <div class="gap"></div>
+                <div class="summary">
+                    <p>
+                        Summary Content Here Summary Content Here Summary Content Here
+                        Summary Content Here Summary Content Here Summary Content Here
+                        Summary Content Here Summary Content Here Summary Content Here
+                    </p>
+                </div>
+                <div class="gap"></div>
+                <div class="category">
+                    <span>Category Here</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        model_1={
+            url: 'image1.jpeg',
+            title: 'New Engine Devloped',
+            summary: 'Recently, a new engine has been developed. As for what it can do, I have no idea.',
+            category: 'science',
+        }
+        model_2={
+            url: 'image2.jpeg',
+            title: 'A Blue Helmet',
+            summary: 'I honestly have no idea why a blue helmet can be reported as news. Is it because it is a blue helmet display?',
+            category: 'boring',
+        }
+        model_3={
+            url: 'image3.jpeg',
+            title: 'King of the Internet!!',
+            summary: 'His highness kitty has been granted us teh honor of appearing on our course DEMO. I feel so honored!!! So what now?',
+            category: 'Internet',
+        }
+        model_4={
+            url: 'image4.jpeg',
+            title: 'Shocking Cat',
+            summary: 'Any image of a cat can get hot on the internet. Smily cat, sleepy cat, smelly cat, shocking cat....',
+            category: 'Internet Royalty',
+        }
+        model_5={
+            url: 'image5.jpeg',
+            title: 'A Chimp',
+            summary: 'I do not know what to write here... So I am gonna repeat. I do not know what to write here... So I am gonna repeat.',
+            category: 'Animal',
+        }
+        model_6={
+            url: 'image6.jpeg',
+            title: 'Chinese HAN Sword',
+            summary: 'Finally, something cool!!! Chinese Han-Dynasty sword!!! Forged two millennium ago, so razor sharp today!!',
+            category: 'Military',
+        }
+    </script>
+</body>
+</html>
